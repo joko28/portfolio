@@ -1,0 +1,313 @@
+/* CSS Variables */
+:root {
+  --primary-color: #ffffff;
+  --hover-color: #5a70d8;
+  --background-color: #111e53; /* Default background color */
+}
+
+/* Reset and Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Better box model handling */
+}
+
+body {
+  overflow-x: hidden; /* Remove horizontal scroll */
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  min-height: 100vh; /* Allow body to expand */
+  position: relative;
+  background-color: var(--background-color); /* Default background color */
+}
+
+/* Interactive for Vantas Bird */
+#interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999; /* Send to back */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure container takes full viewport height */
+  width: 85vw;
+  max-width: 1200px; /* Optional: set max-width for larger screens */
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; /* Ensure it’s above any background layers */
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  align-items: center; /* Vertically centers h1 and nav */
+  justify-content: space-between; /* Positions h1 to the left and nav to the right */
+  padding: 20px 0; /* Adds top and bottom padding */
+}
+
+header h1 {
+  color: var(--primary-color);
+  margin: 0; /* Removes default margin */
+  font-size: 2.5em; /* Adjust as needed */
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Space between navigation items */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
+header nav ul li a.button {
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+header nav ul li a.button:hover {
+  background-color: rgba(255, 255, 255, 0.6); /* More opaque on hover */
+  color: var(--hover-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Active Navigation Link */
+.nav-link.button.active {
+  background-color: rgba(255, 255, 255, 0.6); /* More opaque */
+  color: var(--hover-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* ABOUT PAGE STYLES */
+.twocolumns {
+  width: 100%;
+}
+
+#me {
+  width: 48%;
+  float: left;
+}
+
+#bio {
+  width: 48%;
+  color: #fff;
+  float: right;
+}
+
+button {
+  width: 300px;
+  padding: 15px;
+  background-color: transparent;
+  border: solid #fff 2px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #0f0b30;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  padding: 50px 0;
+  text-align: center;
+  color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Optional blur effect */
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Enhance readability */
+}
+
+.hero p {
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Enhance readability */
+}
+
+/* Portfolio Section */
+
+.portfolio {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2em;
+  text-align: center;
+  color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 50px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.image-item:hover img {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+  color: #fff;
+  width: 100%;
+  transform: translateY(100%); /* Hide initially */
+  transition: transform 0.3s;
+  padding: 10px;
+  text-align: center;
+}
+
+.image-item:hover .overlay {
+  transform: translateY(0); /* Slide up on hover */
+}
+
+.text {
+  font-size: 1em;
+}
+
+/* Footer Styling */
+footer {
+  color: var(--primary-color);
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  margin-top: auto; /* Push footer to the bottom */
+  border-radius: 10px;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icons a.icon:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+.social-icons a.icon i {
+  color: var(--primary-color);
+  font-size: 1.2em;
+}
+
+/* Focus States for Accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid var(--hover-color);
+  outline-offset: 2px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-icons a.icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .hero h2 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .social-icons a.icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  header nav ul li a.button {
+    padding: 8px 16px;
+  }
+}
