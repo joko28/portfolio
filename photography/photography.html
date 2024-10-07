@@ -1,92 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOZEY NGUYEN | PHOTOGRAPHY</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      data-auto-a11y="true"
+      defer
+    ></script>
+  </head>
 
-<head>
-  <title>JOZEY NGUYEN | PHOTOGRAPHY</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
-</head>
-<!--SPAN THROUGH EVERY PAGE-->
-
-<body style="background-color:#001933">
+<body>
   <div class="container">
-    <h1>JOZEY NGUYEN</h1>
-    <ul>
-      <li><a href="index.html" class="effect">HOME</a></li>
-      <li><a href="digitalart.html" class="effect">DIGITAL ART</a></li>
-      <li><a href="art.html" class="effect">ART</a></li>
-      <li><a href="photography.html" class="effect">PHOTOGRAPHY</a></li>
-      <li id="about"><a href="about.html" class="effect">ABOUT</a></li>
-    </ul>
+    <header>
+      <h1>Jozey Nguyen</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html" class="nav-link button">Home</a></li>
+          <li>
+            <a
+              href="../digitalart/digitalart.html"
+              class="nav-link button active"
+              >Digital Art</a
+            >
+          </li>
+          <li><a href="../art/art.html" class="nav-link button">Art</a></li>
+          <li>
+            <a href="../photography/photography.html" class="nav-link button"
+              >Photography</a
+            >
+          </li>
+          <li><a href="../about.html" class="nav-link button">About</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <center>
-      <!--1st GALLERY-->
-      <!--1st ARTWORK-->
-      <div class="row">
-        <div class="column">
-          <div class="imagegroup">
-            <img src="da-assets/PHOTOGRAPHY/PHOTO40_PORTRAITS/portrait1.jpg" class="center">
-            <div class="overlay">
-              <a href="photo1.html">
-                <div class="text"><i>B/W Portraits</i></div><a />
-            </div>
-          </div>
-        </div>
-        <!--2nd ARTWORK-->
-        <div class="column">
-          <div class="imagegroup">
-            <img src="da-assets/PHOTOGRAPHY/PHOTO40_STILLNESS/stillness1.jpg" class="center">
-            <div class="overlay">
-              <a href="photo2.html">
-                <div class="text"><i>B/W Stillness</i></div><a />
-            </div>
-          </div>
-        </div>
-        <!--3rd ARTWORK-->
-        <div class="column">
-          <div class="imagegroup">
-            <img src="da-assets/PHOTOGRAPHY/Exercise_1_Assignment/JozeyNguyen_Exercise01_015.jpg" class="center">
-            <div class="overlay">
-              <a href="photo3.html">
-                <div class="text"><i>The Color of Light</i></div><a />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--2nd GALLERY-->
-      <!--4th ARTWORK-->
-      <div class="row">
-        <div class="column">
-          <div class="imagegroup">
-            <img src="da-assets/PHOTOGRAPHY/Exercise_2_Assignment/JozeyNguyen_Exercise02_019.jpg" class="center">
-            <div class="overlay">
-              <a href="photo4.html">
-                <div class="text"><i>Properties of Color</i></div><a />
-            </div>
-          </div>
-        </div>
-        <!--5th ARTWORK-->
-        <div class="column">
-          <div class="imagegroup">
-            <img src="da-assets/PHOTOGRAPHY/Exercise_3_Assignment/JozeyNguyen_Exercise03_009.jpg" class="center">
-            <div class="overlay">
-              <a href="photo5.html">
-                <div class="text"><i>Color Schemes</i></div><a />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--END OF GALLERY-->
-    </center>
+    <main>
+      <section class="portfolio">
+        <h2>Photo Gallery</h2>
 
-  </div>
+        <div class="gallery">
+          <!-- Artwork 1 -->
+          <div class="image-item">
+            <a href="../photography/photo1.html" class="overlay-link">
+              <img
+                src="../assets/PHOTOGRAPHY/PHOTO40_PORTRAITS/portrait1.jpg"
+                alt="B/W Portraits"
+                loading="lazy"
+              />
+              <div class="overlay">
+                <div class="text">B/W Portraits</div>
+              </div>
+            </a>
+          </div>
 
-  <footer class="footerflex">
-    <a href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There" target="_top" class="effect"><i class="icon fas fa-envelope"></i></a>
-    <a href="https://www.instagram.com/joko.jo.jo/" class="effect"><i class="icon fab fa-instagram"></i></a>
-    <a href="https://vimeo.com/user109355174" class="effect"><i class="icon fab fa-vimeo-v"></i></a>
-    <a href="https://www.linkedin.com/in/jozey-n-830639139/" class="effect"><i class="icon fab fa-linkedin-in"></i></a>
-    </center>
+          <!-- Artwork 2 -->
+          <div class="image-item">
+            <a href="../photography/photo2.html" class="overlay-link">
+              <img
+                src="../assets/PHOTOGRAPHY/PHOTO40_STILLNESS/stillness1.jpg"
+                alt="B/W Stillness"
+                loading="lazy"
+              />
+              <div class="overlay">
+                <div class="text">B/W Stillness</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Artwork 3 -->
+          <div class="image-item">
+            <a href="../photography/photo3.html" class="overlay-link">
+              <img
+                src="../assets/PHOTOGRAPHY/Exercise_1_Assignment/JozeyNguyen_Exercise01_015.jpg"
+                alt="The Color of Light"
+                loading="lazy"
+              />
+              <div class="overlay">
+                <div class="text">The Color of Light</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Artwork 4 -->
+          <div class="image-item">
+            <a href="../photography/photo4.html" class="overlay-link">
+              <img
+                src="../assets/PHOTOGRAPHY/Exercise_2_Assignment/JozeyNguyen_Exercise02_019.jpg"
+                alt="Properties of Color"
+                loading="lazy"
+              />
+              <div class="overlay">
+                <div class="text">Properties of Color</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Artwork 5 -->
+          <div class="image-item">
+            <a href="../photography/photo5.html" class="overlay-link">
+              <img
+                src="../assets/PHOTOGRAPHY/Exercise_3_Assignment/JozeyNguyen_Exercise03_009.jpg"
+                alt="Color Schemes"
+                loading="lazy"
+              />
+              <div class="overlay">
+                <div class="text">Color Schemes</div>
+              </div>
+            </a>
+          </div>
+
+            <!-- Add more artwork items as needed -->
+            <!--END OF GALLERY-->
+          </div>
+        </section>
+      </main>
+
+  <footer>
+    <div class="social-icons">
+      <a
+        href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There"
+        class="icon"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/joko.jo.jo/" class="icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://vimeo.com/user109355174" class="icon">
+        <i class="fab fa-vimeo-v"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jozey-n-830639139/" class="icon">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
   </footer>
 </body>
 
