@@ -172,54 +172,6 @@ button:hover {
   outline: none;
 }
 
-/* Contact Form Styling */
-.contact-form-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-.contact-form-container h3 {
-  color: var(--primary-color);
-}
-.contact-form-container form {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.contact-form-container label {
-  display: block;
-  margin-bottom: 5px;
-  color: var(--primary-color);
-}
-
-.contact-form-container input[type="text"],
-.contact-form-container input[type="email"],
-.contact-form-container textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-.contact-form-container input[type="submit"] {
-  background-color: #2e7b8c;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.contact-form-container input[type="submit"]:hover {
-  background-color: #001933;
-}
-
 /* Hero Section */
 .hero {
   padding: 50px 0;
