@@ -1,72 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOZEY NGUYEN | ARTWORK 2</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap"
+  rel="stylesheet"
+/>
 
-<head>
-  <title>JOZEY NGUYEN | ARTWORK2</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
+<script
+  src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+  data-auto-a11y="true"
+  defer
+></script> 
+
+  <!-- Load external JS file -->
+        <script src="../js/script.js" defer></script>
+      </head>
 </head>
 
-<body style="background-color:#001933">
+<body>
   <div class="container">
-    <h1>JOZEY NGUYEN</h1>
-    <ul>
-      <li><a href="index.html" class="effect">HOME</a></li>
-      <li><a href="digitalart.html" class="effect">DIGITAL ART</a></li>
-      <li><a href="art.html" class="effect">ART</a></li>
-      <li><a href="photography.html" class="effect">PHOTOGRAPHY</a></li>
-      <li id="about"><a href="about.html" class="effect">ABOUT</a></li>
-    </ul>
+    <header>
+      <h1>Jozey Nguyen</h1>
 
-    <center>
-      <h2><i>Bunny 3D Dimensions</i></h2>
+      <nav>
+        <!-- Hamburger menu for mobile -->
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation links -->
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link button">Home</a></li>
+          <li><a href="../uiux/uiux.html" class="nav-link button">UI/UX Design</a></li>
+      
+          <!-- Dropdown for Art -->
+          <li class="dropdown">
+            <button class="nav-link button dropbtn">Art ▼</button>
+            <ul class="dropdown-content">
+              <li><a href="../digitalart/digitalart.html" class="nav-link">Digital Art</a></li>
+              <li><a href="../art/art.html" class="nav-link">Art</a></li>
+            </ul>
+          </li>
+      
+          <li><a href="../photography/photography.html" class="nav-link button">Photography</a></li>
+          <li><a href="../about.html" class="nav-link button">About</a></li>
+        </ul>
+      </nav>
 
-      <h5>Goalie Bunny</h5>
-      <img src="da-assets/DIGITALART/bunnies/goaliebunny.png" width=450 height=360 class="center">
+    </header>
 
-      <h5>Hungry Bunny</h5>
-      <img src="da-assets/DIGITALART/bunnies/hungrybunny.png" width=450 height=360 class="center">
-      <h4>2020, 3D Model</h4>
+    <main>
+      <section class="artwork-detail">
+       <h2><i>Bunny 3D Dimensions</i></h2>
+       <h4>2020, 3D Model</h4>
 
-      <p class="description">
+    <div class="artwork-images">
+      <p>Goalie Bunny</p>
+      <img
+        src="../assets/DIGITALART/bunnies/goaliebunny.png"
+        alt="Bunny 3D Dimension - Artwork 2"
+        loading="lazy"
+      />
+    </b><b></b>
+      <p>Hungry Bunny</p>
+      <img
+        src="../assets/DIGITALART/bunnies/hungrybunny.png"
+        alt="Bunny 3D Dimension - Artwork 2"
+        loading="lazy"
+      />
+    </div>
+
+      <p>
         Adobe Dimension
         <br><br>
         These bunnies were created as a small practice assignment, but the idea behind these was to make something
         out of the object and give it an interesting perspective.
       </p>
-    </center>
+    </section>
+
   </div>
 
-  <center>
-    <section class="navigation">
-      <div class="container">
-        <div class="previous">
-          <p>Previous</p>
-          <a href="artwork1.html">
-            <h3 class="effect">Artwork 1</h3>
-          </a>
-        </div>
-
-        <div class="next">
-          <p>Next</p>
-          <a href="artwork3.html">
-            <h3 class="effect">Artwork 3</h3>
-          </a>
-        </div>
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="previous">
+        <p>Previous</p>
+        <a href="artwork1.html" class="nav-button">Artwork 1</a>
       </div>
-    </section>
-  </center>
 
-  <footer class="footerflex">
-    <center>
-      <a href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There" target="_top" class="effect"><i class="icon fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/joko.jo.jo/" class="effect"><i class="icon fab fa-instagram"></i></a>
-      <a href="https://vimeo.com/user109355174" class="effect"><i class="icon fab fa-vimeo-v"></i></a>
-      <a href="https://www.linkedin.com/in/jozey-n-830639139/" class="effect"><i class="icon fab fa-linkedin-in"></i></a>
-    </center>
-  </footer>
+      <div class="next">
+        <p>Next</p>
+        <a href="artwork3.html" class="nav-button">Artwork 3</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footerflex">
+  <div class="social-icons">
+    <a
+      href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There"
+      class="icon"
+      aria-label="Email"
+    >
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a
+      href="https://www.instagram.com/joko.jo.jo/"
+      class="icon"
+      aria-label="Instagram"
+    >
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a
+      href="https://vimeo.com/user109355174"
+      class="icon"
+      aria-label="Vimeo"
+    >
+      <i class="fab fa-vimeo-v"></i>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/jozey-n-830639139/"
+      class="icon"
+      aria-label="LinkedIn"
+    >
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</footer>
+</div>
 </body>
-
-</body>
-
 </html>

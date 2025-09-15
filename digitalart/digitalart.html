@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JOZEY NGUYEN | DIGITAL ART</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+    <!-- <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <link rel="stylesheet" href="../css/digitalart.css" type="text/css" /> -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap"
       rel="stylesheet" />
@@ -13,24 +17,39 @@
       src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
       data-auto-a11y="true"
       defer></script>
+                  
+        <!-- Load external JS file -->
+        <script src="../js/script.js" defer></script>
   </head>
 
   <body>
     <div class="container">
       <header>
         <h1>Jozey Nguyen</h1>
+
         <nav>
-          <ul>
+          <!-- Hamburger menu for mobile -->
+          <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        
+          <!-- Navigation links -->
+          <ul class="nav-links">
             <li><a href="../index.html" class="nav-link button">Home</a></li>
-            <li>
-              <a href="digitalart.html" class="nav-link button">Digital Art</a>
+            <li><a href="../uiux/uiux.html" class="nav-link button">UI/UX Design</a></li>
+        
+            <!-- Dropdown for Art -->
+            <li class="dropdown">
+              <button class="nav-link button dropbtn">Art ▼</button>
+              <ul class="dropdown-content">
+                <li><a href="digitalart.html" class="nav-link">Digital Art</a></li>
+                <li><a href="../art/art.html" class="nav-link">Art</a></li>
+              </ul>
             </li>
-            <li><a href="../art/art.html" class="nav-link button">Art</a></li>
-            <li>
-              <a href="../photography/photography.html" class="nav-link button"
-                >Photography</a
-              >
-            </li>
+        
+            <li><a href="../photography/photography.html" class="nav-link button">Photography</a></li>
             <li><a href="../about.html" class="nav-link button">About</a></li>
           </ul>
         </nav>

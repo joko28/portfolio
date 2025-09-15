@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JOZEY NGUYEN | ARTWORK 1</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap"
       rel="stylesheet"
@@ -15,29 +16,43 @@
       data-auto-a11y="true"
       defer
     ></script>
-  </head>
+            
+        <!-- Load external JS file -->
+        <script src="../js/script.js" defer></script>
+      </head>
 
   <body>
     <div class="container">
       <header>
         <h1>Jozey Nguyen</h1>
+
         <nav>
-          <ul>
+          <!-- Hamburger menu for mobile -->
+          <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        
+          <!-- Navigation links -->
+          <ul class="nav-links">
             <li><a href="../index.html" class="nav-link button">Home</a></li>
-            <li>
-              <a href="../digitalart/digitalart.html" class="nav-link button"
-                >Digital Art</a
-              >
+            <li><a href="../uiux/uiux.html" class="nav-link button">UI/UX Design</a></li>
+        
+            <!-- Dropdown for Art -->
+            <li class="dropdown">
+              <button class="nav-link button dropbtn">Art ▼</button>
+              <ul class="dropdown-content">
+                <li><a href="../digitalart/digitalart.html" class="nav-link">Digital Art</a></li>
+                <li><a href="../art/art.html" class="nav-link">Art</a></li>
+              </ul>
             </li>
-            <li><a href="../art/art.html" class="nav-link button">Art</a></li>
-            <li>
-              <a href="../photography/photography.html" class="nav-link button"
-                >Photography</a
-              >
-            </li>
+        
+            <li><a href="../photography/photography.html" class="nav-link button">Photography</a></li>
             <li><a href="../about.html" class="nav-link button">About</a></li>
           </ul>
         </nav>
+        
       </header>
 
       <main>
@@ -92,7 +107,10 @@
             To show the beauty of the stars, because nowadays no one cares about
             nature as much as they used to. People are always on their phones,
             computers, or any type of technology and not being grateful for what
-            nature has given us. The bunny represents peace and love because the
+            nature has given us. 
+          </p>
+          <p>
+            The bunny represents peace and love because the
             bunnies are innocent and adorable. The elephant represents
             possibilities and adventure because they are only found in special
             areas of the planet, you can't see them near unless you go to a zoo.
@@ -107,7 +125,7 @@
           <div class="nav-container">
             <div class="previous">
               <p>Previous</p>
-              <a href="artwork9.html" class="nav-button">Artwork 9</a>
+              <a href="artwork11.html" class="nav-button">Artwork 11</a>
             </div>
 
             <div class="next">

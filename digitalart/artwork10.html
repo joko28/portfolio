@@ -1,61 +1,127 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>JOZEY NGUYEN | ARTWORK10</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
-     data-auto-a11y="true"></script>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOZEY NGUYEN | ARTWORK 10</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
 
-<body style="background-color:#001933">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap"
+    rel="stylesheet"
+  />
+
+  <script
+    src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+    data-auto-a11y="true"
+    defer
+  ></script>
+          
+      <!-- Load external JS file -->
+      <script src="../js/script.js" defer></script>
+    </head>
+
+<body>
   <div class="container">
-    <h1>JOZEY NGUYEN</h1>
-    <ul>
-      <li><a href="index.html" class="effect">HOME</a></li>
-      <li><a href="digitalart.html" class="effect">DIGITAL ART</a></li>
-      <li><a href="art.html" class="effect">ART</a></li>
-      <li><a href="photography.html" class="effect">PHOTOGRAPHY</a></li>
-      <li id="about"><a href="about.html" class="effect">ABOUT</a></li>
-    </ul>
+    <header>
+      <h1>Jozey Nguyen</h1>
 
-    <center>
-      <h2>3D Object Modeling</h2>
+      <nav>
+        <!-- Hamburger menu for mobile -->
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation links -->
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link button">Home</a></li>
+          <li><a href="../uiux/uiux.html" class="nav-link button">UI/UX Design</a></li>
+      
+          <!-- Dropdown for Art -->
+          <li class="dropdown">
+            <button class="nav-link button dropbtn">Art ▼</button>
+            <ul class="dropdown-content">
+              <li><a href="../digitalart/digitalart.html" class="nav-link">Digital Art</a></li>
+              <li><a href="../art/art.html" class="nav-link">Art</a></li>
+            </ul>
+          </li>
+      
+          <li><a href="../photography/photography.html" class="nav-link button">Photography</a></li>
+          <li><a href="../about.html" class="nav-link button">About</a></li>
+        </ul>
+      </nav>
+      
+    </header>
 
-      <img src="da-assets/DIGITALART/obj/cameraprint.obj" width=450 height=300 class="center">
+    <main>
+      <section class="artwork-detail">      
+      <h2><i>3D Object Modeling</i></h2>
+      <h4>3D Models, 2020</h4>
 
-      <h4><i>3D Models</i>, 2020</h4>
+      
+      <div class="artwork-images">
+        <img
+          src="../assets/DIGITALART/obj/cameraprint.obj"
+          alt="3D Object Modeling - Artwork 10"
+          loading="lazy"
+        />
+        </div>
 
-<p class="description">Coming Soon
+<p>
+  Coming Soon
   <br><br>
   </p>
-    </center>
-  </div>
+</section>
 
-<center>
-  <section class="navigation">
-    <div class="container">
-      <div class="previous">
-        <p>Previous</p>
-        <a href="artwork1.html"><h3 class="effect">Artwork 9</h3></a>
-      </div>
-
-      <div class="next">
-        <p>Next</p>
-        <a href="artwork3.html"><h3 class="effect">Artwork 1</h3></a>
-      </div>
+<section class="navigation">
+  <div class="nav-container">
+    <div class="previous">
+      <p>Previous</p>
+      <a href="artwork9.html" class="nav-button">Artwork 9</a>
     </div>
-  </section>
-</center>
 
-    <footer class="footerflex">
-      <center>
-        <a href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There" target="_top" class="effect"><i class="icon fas fa-envelope"></i></a>
-        <a href="https://www.instagram.com/joko.jo.jo/" class="effect"><i class="icon fab fa-instagram"></i></a>
-        <a href="https://vimeo.com/user109355174" class="effect"><i class="icon fab fa-vimeo-v"></i></a>
-        <a href="https://www.linkedin.com/in/jozey-n-830639139/" class="effect"><i class="icon fab fa-linkedin-in"></i></a>
-      </center>
-    </footer>
-</body>
+    <div class="next">
+      <p>Next</p>
+      <a href="artwork11.html" class="nav-button">Artwork 11</a>
+    </div>
+  </div>
+</section>
+</main>
 
+<footer class="footerflex">
+<div class="social-icons">
+  <a
+    href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There"
+    class="icon"
+    aria-label="Email"
+  >
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a
+    href="https://www.instagram.com/joko.jo.jo/"
+    class="icon"
+    aria-label="Instagram"
+  >
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a
+    href="https://vimeo.com/user109355174"
+    class="icon"
+    aria-label="Vimeo"
+  >
+    <i class="fab fa-vimeo-v"></i>
+  </a>
+  <a
+    href="https://www.linkedin.com/in/jozey-n-830639139/"
+    class="icon"
+    aria-label="LinkedIn"
+  >
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div>
+</footer>
+</div>
 </body>
 </html>
