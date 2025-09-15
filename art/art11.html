@@ -1,85 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOZEY NGUYEN | ART 11</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
 
-<head>
-  <title>JOZEY NGUYEN | ART10</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
-</head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap"
+    rel="stylesheet"
+  />
 
-<body style="background-color:#001933">
+  <script
+    src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+    data-auto-a11y="true"
+    defer
+  ></script>
+          
+      <!-- Load external JS file -->
+      <script src="../js/script.js" defer></script>
+    </head>
+
+<body>
   <div class="container">
-    <h1>JOZEY NGUYEN</h1>
-    <ul>
-      <li><a href="index.html" class="effect">HOME</a></li>
-      <li><a href="digitalart.html" class="effect">DIGITAL ART</a></li>
-      <li><a href="art.html" class="effect">ART</a></li>
-      <li><a href="photography.html" class="effect">PHOTOGRAPHY</a></li>
-      <li id="about"><a href="about.html" class="effect">ABOUT</a></li>
-    </ul>
+    <header>
+      <h1>Jozey Nguyen</h1>
 
-    <center>
+      <nav>
+        <!-- Hamburger menu for mobile -->
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation links -->
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link button">Home</a></li>
+          <li><a href="../uiux/uiux.html" class="nav-link button">UI/UX Design</a></li>
+      
+          <!-- Dropdown for Art -->
+          <li class="dropdown">
+            <button class="nav-link button dropbtn">Art ▼</button>
+            <ul class="dropdown-content">
+              <li><a href="../digitalart/digitalart.html" class="nav-link">Digital Art</a></li>
+              <li><a href="../art/art.html" class="nav-link">Art</a></li>
+            </ul>
+          </li>
+      
+          <li><a href="../photography/photography.html" class="nav-link button">Photography</a></li>
+          <li><a href="../about.html" class="nav-link button">About</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main>
+      <section class="artwork-detail">      
       <h2><i>The Phoenix</i></h2>
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenix.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenix1.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenix2.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenix3.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenix4.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenix5.jpg" width=350 height=450 class="center">
-      <h5>Process</h5>
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenixp1.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenixp2.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenixp3.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenixp4.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenixp5.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenixp6.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenixp7.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenixp8.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenixp9.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THEPHOENIX/phoenixp10.jpg" width=350 height=450 class="center">
+       <h4>2021, Sculpture</h4>
 
-      <h4>2021, Sculpture</h4>
+       <div class="artwork-images">
+        <img
+          src="../assets/SCULPTURE/THEPHOENIX/phoenix.jpg"
+          alt="The Phoenix - Artwork 11"
+          loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenix1.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenix2.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenix3.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenix4.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenix5.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+         </div>
 
-      <p class="description">Art 13: 3D Concepts | Wire Sculpture
+    
+      <h4>Process</h4>
+      
+      <div class="artwork-images">
+        <img
+          src="../assets/SCULPTURE/THEPHOENIX/phoenixp1.jpg"
+          alt="The Phoenix - Artwork 11"
+          loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenixp2.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenixp3.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenixp4.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenixp5.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenixp6.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenixp7.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenixp8.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenixp9.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THEPHOENIX/phoenixp10.jpg"
+        alt="The Phoenix - Artwork 11"
+        loading="lazy"
+        />v
+         </div>
+
+      <p>
+        Art 13: 3D Concepts | Wire Sculpture
         <br><br>
         For this project, I chose to recreate a phoenix into a wire sculpture because of the idea behind this mystical creature. We had to choose an object or an animal to sculpt but even though this creature is just a myth there are other animal characteristics that it presents.
         <br><br>
         Firstly, I created the body then the head so that I can see the size and how the head will be able to fit and attach to the body. After attaching them together with cross-hatching wires, I created the wings and a stand that will hold the figure up. I used two-three different wires to have detail and stable weight balance so that the body will have the most weight when it stands. It was a challenging process bending and shaping this sculpture with pliers but it was also fun way to learn more about sculpting.
-        <br><br>
       </p>
-    </center>
-  </div>
+    </section>
 
-  <center>
     <section class="navigation">
-      <div class="container">
+      <div class="nav-container">
         <div class="previous">
           <p>Previous</p>
-          <a href="art10.html">
-            <h3 class="effect">Artwork 10</h3>
-          </a>
+          <a href="art10.html" class="nav-button">Artwork 10</a>
         </div>
 
         <div class="next">
           <p>Next</p>
-          <a href="art1.html">
-            <h3 class="effect">Artwork 1</h3>
-          </a>
+          <a href="art1.html" class="nav-button">Artwork 1</a>
         </div>
       </div>
     </section>
-  </center>
+  </main>
 
   <footer class="footerflex">
-    <center>
-      <a href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There" target="_top" class="effect"><i class="icon fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/joko.jo.jo/" class="effect"><i class="icon fab fa-instagram"></i></a>
-      <a href="https://vimeo.com/user109355174" class="effect"><i class="icon fab fa-vimeo-v"></i></a>
-      <a href="https://www.linkedin.com/in/jozey-n-830639139/" class="effect"><i class="icon fab fa-linkedin-in"></i></a>
-    </center>
+    <div class="social-icons">
+      <a
+        href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There"
+        class="icon"
+        aria-label="Email"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/joko.jo.jo/"
+        class="icon"
+        aria-label="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a
+        href="https://vimeo.com/user109355174"
+        class="icon"
+        aria-label="Vimeo"
+      >
+        <i class="fab fa-vimeo-v"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/jozey-n-830639139/"
+        class="icon"
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
   </footer>
+</div>
 </body>
-
-</body>
-
 </html>

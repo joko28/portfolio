@@ -1,79 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOZEY NGUYEN | ART 10</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
 
-<head>
-  <title>JOZEY NGUYEN | ART10</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
-</head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap"
+    rel="stylesheet"
+  />
 
-<body style="background-color:#001933">
+  <script
+    src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+    data-auto-a11y="true"
+    defer
+  ></script>
+          
+      <!-- Load external JS file -->
+      <script src="../js/script.js" defer></script>
+    </head>
+
+<body>
   <div class="container">
-    <h1>JOZEY NGUYEN</h1>
-    <ul>
-      <li><a href="index.html" class="effect">HOME</a></li>
-      <li><a href="digitalart.html" class="effect">DIGITAL ART</a></li>
-      <li><a href="art.html" class="effect">ART</a></li>
-      <li><a href="photography.html" class="effect">PHOTOGRAPHY</a></li>
-      <li id="about"><a href="about.html" class="effect">ABOUT</a></li>
-    </ul>
+    <header>
+      <h1>Jozey Nguyen</h1>
 
-    <center>
+      <nav>
+        <!-- Hamburger menu for mobile -->
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation links -->
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link button">Home</a></li>
+          <li><a href="../uiux/uiux.html" class="nav-link button">UI/UX Design</a></li>
+      
+          <!-- Dropdown for Art -->
+          <li class="dropdown">
+            <button class="nav-link button dropbtn">Art ▼</button>
+            <ul class="dropdown-content">
+              <li><a href="../digitalart/digitalart.html" class="nav-link">Digital Art</a></li>
+              <li><a href="../art/art.html" class="nav-link">Art</a></li>
+            </ul>
+          </li>
+      
+          <li><a href="../photography/photography.html" class="nav-link button">Photography</a></li>
+          <li><a href="../about.html" class="nav-link button">About</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main>
+      <section class="artwork-detail">      
       <h2><i>The Soul Tree</i></h2>
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultree1.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultree2.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultree-closeup1.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultree-closeup2.jpg" width=350 height=450 class="center">
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultree-spiral-body.jpg" width=350 height=450 class="center">
-      <h5>Process</h5>
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultreep1.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultreep2.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultreep3.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultreep4.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultreep5.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultreep6.jpg" width=450 height=350 class="center">
-      <img src="da-assets/SCULPTURE/THESOULTREE/thesoultreep7.jpg" width=350 height=450 class="center">
-
       <h4>2021, Sculpture</h4>
 
-      <p class="description">Art 13: 3D Concepts | Modules
+      <div class="artwork-images">
+        <img
+          src="../assets/SCULPTURE/THESOULTREE/thesoultree1.jpg"
+          alt="The Soul Tree - Artwork 10"
+          loading="lazy"
+        />
+        <img
+          src="../assets/SCULPTURE/THESOULTREE/thesoultree2.jpg"
+          alt="The Soul Tree - Artwork 10"
+          loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THESOULTREE/thesoultree-closeup1.jpg"
+        alt="The Soul Tree - Artwork 10"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THESOULTREE/thesoultree-closeup2.jpg"
+        alt="The Soul Tree - Artwork 10"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THESOULTREE/thesoultree-spiral-body.jpg"
+        alt="The Soul Tree - Artwork 10"
+        loading="lazy"
+        />
+        </div>
+
+      <h4>Process</h4>
+      
+      <div class="artwork-images">
+        <img
+          src="../assets/SCULPTURE/THESOULTREE/thesoultreep1.jpg"
+          alt="The Soul Tree - Artwork 10"
+          loading="lazy"
+        />
+        <img
+          src="../assets/SCULPTURE/THESOULTREE/thesoultreep2.jpg"
+          alt="The Soul Tree - Artwork 10"
+          loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THESOULTREE/thesoultreep3.jpg"
+        alt="The Soul Tree - Artwork 10"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THESOULTREE/thesoultreep4.jpg"
+        alt="The Soul Tree - Artwork 10"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THESOULTREE/thesoultreep5.jpg"
+        alt="The Soul Tree - Artwork 10"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THESOULTREE/thesoultreep6.jpg"
+        alt="The Soul Tree - Artwork 10"
+        loading="lazy"
+        />
+        <img
+        src="../assets/SCULPTURE/THESOULTREE/thesoultreep7.jpg"
+        alt="The Soul Tree - Artwork 10"
+        loading="lazy"
+        />
+        </div>
+
+      <p>
+        Art 13: 3D Concepts | Modules
         <br><br>
         For this project, we had to create three-dimensional modules from any material we chose. I chose to use both toothpicks and popsicle sticks. After creating almost a hundred identical modules over and over again, I connected them together in a spiral pattern from the biggest at the bottom to the smallest at the top. The toothpicks were made glued together to look like branches as if it was a tree. The connection between the material and context of the sculpture is that they are both about nature, the wood element. I want to showcase the thought of how a person’s spirit manifests into growth, like how a child grows condensing information and making something out of themselves.
-        <br><br>
       </p>
-    </center>
-  </div>
+    </section>
 
-  <center>
     <section class="navigation">
-      <div class="container">
+      <div class="nav-container">
         <div class="previous">
           <p>Previous</p>
-          <a href="art9.html">
-            <h3 class="effect">Artwork 9</h3>
-          </a>
+          <a href="art9.html" class="nav-button">Artwork 9</a>
         </div>
 
         <div class="next">
           <p>Next</p>
-          <a href="art11.html">
-            <h3 class="effect">Artwork 11</h3>
-          </a>
+          <a href="art11.html" class="nav-button">Artwork 11</a>
         </div>
       </div>
     </section>
-  </center>
+  </main>
 
   <footer class="footerflex">
-    <center>
-      <a href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There" target="_top" class="effect"><i class="icon fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/joko.jo.jo/" class="effect"><i class="icon fab fa-instagram"></i></a>
-      <a href="https://vimeo.com/user109355174" class="effect"><i class="icon fab fa-vimeo-v"></i></a>
-      <a href="https://www.linkedin.com/in/jozey-n-830639139/" class="effect"><i class="icon fab fa-linkedin-in"></i></a>
-    </center>
+    <div class="social-icons">
+      <a
+        href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There"
+        class="icon"
+        aria-label="Email"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/joko.jo.jo/"
+        class="icon"
+        aria-label="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a
+        href="https://vimeo.com/user109355174"
+        class="icon"
+        aria-label="Vimeo"
+      >
+        <i class="fab fa-vimeo-v"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/jozey-n-830639139/"
+        class="icon"
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
   </footer>
+</div>
 </body>
-
-</body>
-
 </html>

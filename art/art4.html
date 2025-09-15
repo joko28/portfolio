@@ -1,73 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOZEY NGUYEN | ART 4</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
 
-<head>
-  <title>JOZEY NGUYEN | ART4</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
-</head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap"
+    rel="stylesheet"
+  />
 
-<body style="background-color:#001933">
+  <script
+    src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+    data-auto-a11y="true"
+    defer
+  ></script>
+          
+      <!-- Load external JS file -->
+      <script src="../js/script.js" defer></script>
+    </head>
+
+<body>
   <div class="container">
-    <h1>JOZEY NGUYEN</h1>
-    <ul>
-      <li><a href="index.html" class="effect">HOME</a></li>
-      <li><a href="digitalart.html" class="effect">DIGITAL ART</a></li>
-      <li><a href="art.html" class="effect">ART</a></li>
-      <li><a href="photography.html" class="effect">PHOTOGRAPHY</a></li>
-      <li id="about"><a href="about.html" class="effect">ABOUT</a></li>
-    </ul>
+    <header>
+      <h1>Jozey Nguyen</h1>
 
-    <center>
+      <nav>
+        <!-- Hamburger menu for mobile -->
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation links -->
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link button">Home</a></li>
+          <li><a href="../uiux/uiux.html" class="nav-link button">UI/UX Design</a></li>
+      
+          <!-- Dropdown for Art -->
+          <li class="dropdown">
+            <button class="nav-link button dropbtn">Art ▼</button>
+            <ul class="dropdown-content">
+              <li><a href="../digitalart/digitalart.html" class="nav-link">Digital Art</a></li>
+              <li><a href="../art/art.html" class="nav-link">Art</a></li>
+            </ul>
+          </li>
+      
+          <li><a href="../photography/photography.html" class="nav-link button">Photography</a></li>
+          <li><a href="../about.html" class="nav-link button">About</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main>
+      <section class="artwork-detail">
       <h2><i>Contour & Cross-Contour Lines</i></h2>
-      <h5>Contour Lines</h5>
-      <img src="da-assets/DRAWINGS/contour-line.jpg" width=450 height=350 class="center">
-      <br><br>
-      <h5>Cross-Contour Lines</h5>
-      <img src="da-assets/DRAWINGS/cross-contour-line1.jpeg" width=350 height=450 class="center">
-      <img src="da-assets/DRAWINGS/cross-contour-line2.jpeg" width=350 height=450 class="center">
-
       <h4>2020, Drawing</h4>
 
-      <p class="description">Art 24: Beginning Drawing | Contour & Cross-Contour Lines
+      <h4>Contour Lines</h4>
+      <div class="artwork-images">
+        <img
+          src="../assets/DRAWINGS/contour-line.jpg"
+          alt="Contour & Cross-Contour Lines - Artwork 4"
+          loading="lazy"
+        />
+        </div>
+     
+      <h4>Cross-Contour Lines</h4>
+      <div class="artwork-images">
+        <img
+          src="../assets/DRAWINGS/cross-contour-line1.jpeg"
+          alt="Contour & Cross-Contour Lines - Artwork 4"
+          loading="lazy"
+        />
+        <img
+        src="../assets/DRAWINGS/cross-contour-line2.jpeg"
+        alt="Contour & Cross-Contour Lines - Artwork 4"
+        loading="lazy"
+      />
+        </div>
+
+      <p>
+        Art 24: Beginning Drawing | Contour & Cross-Contour Lines
         <br><br>
         For this assignment, I got to understand & show the volume of objects and figure out the differences between mechanical and modulated lines when seen or drawn. We had to pick out an area with many objects for the first contour and choose
         specific objects for the cross-contour line drawings.
-        <br><br>
       </p>
-    </center>
-  </div>
+    </section>
 
-  <center>
     <section class="navigation">
-      <div class="container">
+      <div class="nav-container">
         <div class="previous">
           <p>Previous</p>
-          <a href="art3.html">
-            <h3 class="effect">Artwork 3</h3>
-          </a>
+          <a href="art3.html" class="nav-button">Artwork 3</a>
         </div>
 
         <div class="next">
           <p>Next</p>
-          <a href="art5.html">
-            <h3 class="effect">Artwork 5</h3>
-          </a>
+          <a href="art5.html" class="nav-button">Artwork 5</a>
         </div>
       </div>
     </section>
-  </center>
+  </main>
 
   <footer class="footerflex">
-    <center>
-      <a href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There" target="_top" class="effect"><i class="icon fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/joko.jo.jo/" class="effect"><i class="icon fab fa-instagram"></i></a>
-      <a href="https://vimeo.com/user109355174" class="effect"><i class="icon fab fa-vimeo-v"></i></a>
-      <a href="https://www.linkedin.com/in/jozey-n-830639139/" class="effect"><i class="icon fab fa-linkedin-in"></i></a>
-    </center>
+    <div class="social-icons">
+      <a
+        href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There"
+        class="icon"
+        aria-label="Email"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/joko.jo.jo/"
+        class="icon"
+        aria-label="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a
+        href="https://vimeo.com/user109355174"
+        class="icon"
+        aria-label="Vimeo"
+      >
+        <i class="fab fa-vimeo-v"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/jozey-n-830639139/"
+        class="icon"
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
   </footer>
+</div>
 </body>
-
-</body>
-
 </html>

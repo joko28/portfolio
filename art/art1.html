@@ -1,30 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOZEY NGUYEN | ART 1</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
 
-<head>
-  <title>JOZEY NGUYEN | ART1</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-a11y="true"></script>
-</head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap"
+    rel="stylesheet"
+  />
 
-<body style="background-color:#001933">
+  <script
+    src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+    data-auto-a11y="true"
+    defer
+  ></script>
+          
+      <!-- Load external JS file -->
+      <script src="../js/script.js" defer></script>
+    </head>
+
+<body>
   <div class="container">
-    <h1>JOZEY NGUYEN</h1>
-    <ul>
-      <li><a href="index.html" class="effect">HOME</a></li>
-      <li><a href="digitalart.html" class="effect">DIGITAL ART</a></li>
-      <li><a href="art.html" class="effect">ART</a></li>
-      <li><a href="photography.html" class="effect">PHOTOGRAPHY</a></li>
-      <li id="about"><a href="about.html" class="effect">ABOUT</a></li>
-    </ul>
+    <header>
+      <h1>Jozey Nguyen</h1>
 
-    <center>
+      <nav>
+        <!-- Hamburger menu for mobile -->
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation links -->
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link button">Home</a></li>
+          <li><a href="../uiux/uiux.html" class="nav-link button">UI/UX Design</a></li>
+      
+          <!-- Dropdown for Art -->
+          <li class="dropdown">
+            <button class="nav-link button dropbtn">Art ▼</button>
+            <ul class="dropdown-content">
+              <li><a href="../digitalart/digitalart.html" class="nav-link">Digital Art</a></li>
+              <li><a href="../art/art.html" class="nav-link">Art</a></li>
+            </ul>
+          </li>
+      
+          <li><a href="../photography/photography.html" class="nav-link button">Photography</a></li>
+          <li><a href="../about.html" class="nav-link button">About</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main>
+      <section class="artwork-detail">
       <h2><i>Collage</i></h2>
-      <img src="da-assets/DRAWINGS/collage.jpg" width=450 height=350 class="center">
+        <h4>2020, Collage</h4>
 
-      <h4>2020, Collage</h4>
+        <div class="artwork-images">
+          <img
+            src="../assets/DRAWINGS/collage.jpg"
+            alt="Collage - Artwork 1"
+            loading="lazy"
+          />
+        </div>
 
-      <p class="description">Art 12: 2-D Des & Color Concept | Value & Form
+      <p>
+        Art 12: 2-D Des & Color Concept | Value & Form
         <br><br>
         For this collage assignment, I wasn’t too sure about what I wanted to do. I thought about it for a while and just took the time to look for images that were to my taste. Images that I wanted to express, such as what I wanted to do and what I liked. I didn’t know how many photos I would need, so I just printed out as many photos that I took a liking to. When I searched for images, I thought about traveling. Where I wanted to travel were places that people usually want to go to,such as Asia, Paris, Rome, Egypt, and going on a road trip. I thought about the culture in these places, so I wanted to express my culture as well. I am from Vietnam so I wanted to visualize Buddhism and our cultural wear for women.
         <br><br>
@@ -33,39 +78,55 @@
         this collage.
         <br><br>
       </p>
-    </center>
-  </div>
+    </section>
 
-  <center>
     <section class="navigation">
-      <div class="container">
+      <div class="nav-container">
         <div class="previous">
           <p>Previous</p>
-          <a href="art10.html">
-            <h3 class="effect">Artwork 11</h3>
-          </a>
+          <a href="art11.html" class="nav-button">Artwork 11</a>
         </div>
 
         <div class="next">
           <p>Next</p>
-          <a href="art2.html">
-            <h3 class="effect">Artwork 2</h3>
-          </a>
+          <a href="art2.html" class="nav-button">Artwork 2</a>
         </div>
       </div>
     </section>
-  </center>
+  </main>
 
   <footer class="footerflex">
-    <center>
-      <a href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There" target="_top" class="effect"><i class="icon fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/joko.jo.jo/" class="effect"><i class="icon fab fa-instagram"></i></a>
-      <a href="https://vimeo.com/user109355174" class="effect"><i class="icon fab fa-vimeo-v"></i></a>
-      <a href="https://www.linkedin.com/in/jozey-n-830639139/" class="effect"><i class="icon fab fa-linkedin-in"></i></a>
-    </center>
+    <div class="social-icons">
+      <a
+        href="mailto:nguyenjozey@gmail.com?Subject=Hello%20There"
+        class="icon"
+        aria-label="Email"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/joko.jo.jo/"
+        class="icon"
+        aria-label="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a
+        href="https://vimeo.com/user109355174"
+        class="icon"
+        aria-label="Vimeo"
+      >
+        <i class="fab fa-vimeo-v"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/jozey-n-830639139/"
+        class="icon"
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
   </footer>
+</div>
 </body>
-
-</body>
-
 </html>
